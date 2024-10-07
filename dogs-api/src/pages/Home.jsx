@@ -1,8 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { FaHeart,FaBookmark } from 'react-icons/fa';
-import ReactLoading from 'react-loading';
-import {HomeContainer,ImageDog,ButtonLike,ButtonSaved,ButtonContainer} from '../styles/StyledHome'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { FaHeart, FaBookmark } from "react-icons/fa";
+import ReactLoading from "react-loading";
+import {
+  HomeContainer,
+  ImageDog,
+  ButtonLike,
+  ButtonSaved,
+  ButtonContainer,
+} from "../styles/StyledHome";
+
+import { HeaderTitle } from "../styles/StyledHeader";
 
 export function Home({ onLike, onSave }) {
   const [dog, setDog] = useState(null);
@@ -16,7 +24,8 @@ export function Home({ onLike, onSave }) {
     setLoading(true);
     const res = await axios.get("https://api.thedogapi.com/v1/images/search", {
       headers: {
-        "x-api-key": "live_NbWBjQjAq3aScfcGB0RvOxdZDODEqdEuFDDOKwGUDbbR7isBL9cEY65QYAVcj88X",
+        "x-api-key":
+          "live_NbWBjQjAq3aScfcGB0RvOxdZDODEqdEuFDDOKwGUDbbR7isBL9cEY65QYAVcj88X",
       },
     });
     setDog(res.data[0]);
@@ -39,20 +48,20 @@ export function Home({ onLike, onSave }) {
 
   return (
     <HomeContainer>
-      <h3>Home</h3>
+      <HeaderTitle>Home</HeaderTitle>
       {loading ? (
         <ReactLoading type={"spin"} color={"#420493"} height={50} width={50} />
       ) : dog ? (
         <>
           <ImageDog src={dog.url} alt="Dog" />
           <ButtonContainer>
-          <ButtonLike onClick={handleLike}>
-            <FaHeart /> Curtir
-          </ButtonLike>
-          <ButtonSaved onClick={handleSave}>
-            <FaBookmark /> Salvar
-          </ButtonSaved>
-        </ButtonContainer>
+            <ButtonLike onClick={handleLike}>
+              <FaHeart /> Curtir
+            </ButtonLike>
+            <ButtonSaved onClick={handleSave}>
+              <FaBookmark /> Salvar
+            </ButtonSaved>
+          </ButtonContainer>
         </>
       ) : (
         <p>Carregando....</p>
