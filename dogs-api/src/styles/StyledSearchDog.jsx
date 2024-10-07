@@ -12,7 +12,7 @@ export const SearchText = styled.h3`
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
-  color: #333;
+  color: #F6F3EC;
 `;
 
 export const SearchInput = styled.input`
@@ -22,12 +22,13 @@ export const SearchInput = styled.input`
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  border: none;
 `;
 
 export const ButtonSearch = styled.button`
   padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
+  background-color: #F6F3EC;
+  color: #335577O1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -35,7 +36,7 @@ export const ButtonSearch = styled.button`
   margin-bottom: 20px;
 
   &:hover {
-    background-color: #2980b9;
+    background-color: #F6F3EC;
   }
 `;
 

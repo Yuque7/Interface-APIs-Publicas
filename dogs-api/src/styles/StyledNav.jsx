@@ -5,17 +5,16 @@ export const Navbar = styled.nav`
   display: flex;
   justify-content: center;
   padding: 10px;
-  margin-top: 40px;
 `;
 
 export const NavLink = styled(Link)`
   margin: 0 15px;
-  color: #420493;
+  color: #F6F3EC;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 
   &:hover {
-    color: #571ba6;
+    color: #f7e6bf;
   }
 `;

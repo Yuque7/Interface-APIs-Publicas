@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
-// Criando um título estilizado
 export const HeaderTitle = styled.h1`
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  color: #420493;
+  color: #f7e6bf;
   margin: 20px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 

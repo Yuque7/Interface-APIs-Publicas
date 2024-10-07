@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { FaHeart, FaBookmark } from "react-icons/fa";
+import { FaHeart, FaBookmark, FaDog } from "react-icons/fa";
 import ReactLoading from "react-loading";
 import {
   HomeContainer,
@@ -48,9 +48,9 @@ export function Home({ onLike, onSave }) {
 
   return (
     <HomeContainer>
-      <HeaderTitle>Home</HeaderTitle>
+      <HeaderTitle><FaDog /> DOGUINHOS</HeaderTitle>
       {loading ? (
-        <ReactLoading type={"spin"} color={"#420493"} height={50} width={50} />
+        <ReactLoading type={"spin"} color={"#F6F3EC"} height={50} width={50} />
       ) : dog ? (
         <>
           <ImageDog src={dog.url} alt="Dog" />

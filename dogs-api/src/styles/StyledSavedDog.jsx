@@ -25,5 +25,9 @@ export const SavedText = styled.h2`
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
-  color: #420493;
+  color: #F6F3EC;
+`;
+
+export const MessageSaved = styled.p`
+color: #F6F3EC;
 `;

@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import { Home } from './pages/Home';
 import { SearchDog } from './pages/SearchDogs';
 import { SavedDog } from './pages/SavedDog';
+import './App.css';
 
 const App = () => {
   const [savedDogs, setSavedDogs] = useState([]);

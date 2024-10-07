@@ -26,15 +26,15 @@ export const ButtonLike = styled.button`
   justify-content: center;
   padding: 10px 20px;
   margin: 10px;
-  background-color: #782bdd;
-  color: #fff;
+  background-color: #F6F3EC;
+  color: #3577O1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   
   &:hover {
-    background-color: #420493;
+    background-color: #f7e6bf;
   }
 
   svg {
@@ -43,9 +43,9 @@ export const ButtonLike = styled.button`
 `;
 
 export const ButtonSaved = styled(ButtonLike)`
-background-color: #782bdd;
+background-color: #F6F3EC;
 
 &:hover {
-  background-color: #420493;
+  background-color: #f7e6bf;
 }
 `;
