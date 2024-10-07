@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaHeart, FaDog, FaSearch } from 'react-icons/fa';
+import {NavLink,Navbar} from '../styles/StyledNav'
 
 const Nav = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/saved">Cachorros Salvos</Link>
-      <Link to="/search">Pesquisar Raça</Link>
-    </nav>
+    <Navbar>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/saved">Cachorros Salvos</NavLink>
+    <NavLink to="/search">Pesquisar Raça</NavLink>
+  </Navbar>
   );
 };
 
